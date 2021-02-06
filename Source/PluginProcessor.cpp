@@ -94,6 +94,7 @@ void TSPedalAudioProcessor::changeProgramName (int index, const juce::String& ne
 void TSPedalAudioProcessor::prepareToPlay (double sampleRate, int samplesPerBlock)
 {
     tone.prepare((float) sampleRate);
+    clipper.prepare((float) sampleRate);
 }
 
 void TSPedalAudioProcessor::releaseResources()
@@ -136,12 +137,14 @@ void TSPedalAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer, juce
         buffer.clear (i, 0, buffer.getNumSamples());
 
     tone.setKnobs(toneValue, outputValue);
+    clipper.setKnob(driveValue);
     
     for (int channel = 0; channel < totalNumInputChannels; ++channel)
     {
         for (int n = 0; n < buffer.getNumSamples() ; ++n){
             float x = buffer.getReadPointer(channel)[n];
-            float y = tone.processSample(x);
+            float y = clipper.processSample(x);
+            y = tone.processSample(y);
             if (effectOn){
                 buffer.getWritePointer(channel)[n] = y;
             }

@@ -10,6 +10,7 @@
 
 #include <JuceHeader.h>
 #include "TSTone.h"
+#include "TSClipper.h"
 
 //==============================================================================
 /**
@@ -61,6 +62,7 @@ public:
 private:
     
     TSTone tone;
+    TSClipper clipper;
     
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (TSPedalAudioProcessor)

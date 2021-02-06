@@ -17,6 +17,8 @@
             file="Source/PedalComponent.h"/>
       <FILE id="eGN2LT" name="TSTone.cpp" compile="1" resource="0" file="Source/TSTone.cpp"/>
       <FILE id="bo5prJ" name="TSTone.h" compile="0" resource="0" file="Source/TSTone.h"/>
+      <FILE id="kRtG7B" name="TSClipper.cpp" compile="1" resource="0" file="Source/TSClipper.cpp"/>
+      <FILE id="pTNQvq" name="TSClipper.h" compile="0" resource="0" file="Source/TSClipper.h"/>
     </GROUP>
   </MAINGROUP>
   <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
