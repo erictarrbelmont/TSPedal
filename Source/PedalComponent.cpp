@@ -104,6 +104,7 @@ PedalComponent::PedalComponent(TSPedalAudioProcessor& p,
     knobs[0].setSliderStyle(Slider::RotaryHorizontalVerticalDrag);
     knobs[0].setTextBoxStyle(Slider::NoTextBox, true, 0, 0);
     knobs[0].setRange(0.f,1.f);
+    knobs[0].setValue(processor.driveValue);
     addAndMakeVisible(knobs[0]);
 
     knobs[1].addListener(this);
@@ -113,6 +114,7 @@ PedalComponent::PedalComponent(TSPedalAudioProcessor& p,
     knobs[1].setSliderStyle(Slider::RotaryHorizontalVerticalDrag);
     knobs[1].setTextBoxStyle(Slider::NoTextBox, true, 0, 0);
     knobs[1].setRange(0.f,1.f);
+    knobs[1].setValue(processor.toneValue);
     addAndMakeVisible(knobs[1]);
     
     knobs[2].addListener(this);
@@ -122,6 +124,7 @@ PedalComponent::PedalComponent(TSPedalAudioProcessor& p,
     knobs[2].setSliderStyle(Slider::RotaryHorizontalVerticalDrag);
     knobs[2].setTextBoxStyle(Slider::NoTextBox, true, 0, 0);
     knobs[2].setRange(0.f,1.f);
+    knobs[2].setValue(processor.outputValue);
     addAndMakeVisible(knobs[2]);
 
     // JUCE components offer a built-in image buffering system so that expensive

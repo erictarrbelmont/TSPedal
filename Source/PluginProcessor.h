@@ -9,6 +9,7 @@
 #pragma once
 
 #include <JuceHeader.h>
+#include "TSTone.h"
 
 //==============================================================================
 /**
@@ -53,11 +54,14 @@ public:
     void getStateInformation (juce::MemoryBlock& destData) override;
     void setStateInformation (const void* data, int sizeInBytes) override;
 
-    float driveValue  = 0.f;
-    float toneValue   = 0.f;
-    float outputValue = 0.f;
+    float driveValue  = 0.5f;
+    float toneValue   = 0.5f;
+    float outputValue = 1.f;
     bool  effectOn = true;
 private:
+    
+    TSTone tone;
+    
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (TSPedalAudioProcessor)
 };

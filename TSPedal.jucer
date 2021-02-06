@@ -15,6 +15,8 @@
             file="Source/PedalComponent.cpp"/>
       <FILE id="vlIMoj" name="PedalComponent.h" compile="0" resource="0"
             file="Source/PedalComponent.h"/>
+      <FILE id="eGN2LT" name="TSTone.cpp" compile="1" resource="0" file="Source/TSTone.cpp"/>
+      <FILE id="bo5prJ" name="TSTone.h" compile="0" resource="0" file="Source/TSTone.h"/>
     </GROUP>
   </MAINGROUP>
   <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
