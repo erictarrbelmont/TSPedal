@@ -1,5 +1,6 @@
 # TSPedal
-Repository for the Audio Circuit Modeling Workshop, February 6-7, 2021.
+Repository for the Audio Developers Conference (ADC) 2021 workshop, November 19, 2021
+and the University of West London (UWL) Audio Circuit Modeling Workshop, February 6-7, 2021.
 
 Video recordings of the livestream: https://www.patreon.com/hackaudio
 
